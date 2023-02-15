@@ -71,8 +71,8 @@ default_layer {
         &none &kp Z      &kp X      &kp C       &kp V       &kp B          &kp N        &kp M         &kp COMMA   &kp DOT    &kp FSLH     &none
                          &none      &none                                                           &kp SEMI    &kp ENTER
                                                 &lt 1 SPACE &none          &none        &lt 1 BSPC
-                                                &lt 2 ESC   &lt 3 TAB      &lt 3 ENTER  &lt 2 DEL
-                                                &kp LSHFT   &kp LPAR       &kp RPAR     &kp RSHFT
+                                                &lt 2 TAB   &lt 3 ESC      &lt 3 ENTER  &lt 2 DEL
+                                                &kp LPAR   &kp LSHFT       &kp RSHFT     &kp RPAR
     >;
 };
 
