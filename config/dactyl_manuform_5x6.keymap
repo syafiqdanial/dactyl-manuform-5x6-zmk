@@ -52,6 +52,15 @@ hm: homerow_mods {
 
     keymap {
         compatible = "zmk,keymap";
+// -----------------------------------------------------------------------------------------
+// | na | na | na | na  | na  | na ||             || na | na  | na  | na | na | na |
+// | na | Q  | W  | E   | R   | T  ||             || Y  | U   | I   | O  | P  | na |
+// | na | A  | S  | D   | F   | G  ||             || H  | J   | K   | L  | '  | na |
+// | na | Z  | X  | C   | V   | B  ||             || N  | M   | ,   | .  | /  | na |
+//           | B1 | B2  |          ||             ||          | B3  | B4 |
+//                | 1,1 | na  |    ||             ||    | na  | 1,1 |
+//                | 1,2 | 1,3 |    ||             ||    | 1,3 | 1,2 |
+//                | 2,3 | 2,2 |    ||             ||    | 2,2 | 2,3 |
 
 default_layer {
     bindings = <
@@ -60,22 +69,22 @@ default_layer {
         &none &hm LGUI A &hm LALT S &hm LCTRL D &kp F       &kp G          &kp H      &kp J         &hm RCTRL K &hm RALT L &hm RGUI SQT &none
         &none &kp Z      &kp X      &kp C       &kp V       &kp B          &kp N      &kp M         &kp COMMA   &kp DOT    &kp FSLH     &none
                          &none      &none                                                           &kp SEMI    &kp ENTER
-                                                &kp ESC     &none          &none      &kp BACKSPACE
-                                                &lt 1 SPACE &hm LSHFT TAB  &kp DELETE &kp RSHFT
-                                                &lt 2 LBKT  &lt 3 RBKT     &lt 3 RGUI &none
+                                                &lt 1 SPACE &none          &none      &lt 1 BSPC
+                                                &lt 2 ESC   &lt 3 TAB      &lt 3      &lt 2 DEL
+                                                &kp LSHFT   &kp LPAR       &kp RPAR   &kp RSHFT
     >;
 };
 
 navnum_layer {
     bindings = <
-        &none  &none           &none         &none     &none     &none                 &none    &none    &none    &none     &none &none
-        &none  &kp KP_PLUS     &kp KP_N1     &kp KP_N2 &kp KP_N3 &kp LPAR              &kp RPAR &kp CAPS &kp UP   &trans    &none &none
-        &none  &kp KP_MINUS    &kp KP_N4     &kp KP_N5 &kp KP_N6 &kp EQUAL             &none    &kp LEFT &kp DOWN &kp RIGHT &none &none
-        &none  &kp KP_MULTIPLY &kp KP_N7     &kp KP_N8 &kp KP_N9 &trans                &none    &none    &none    &none     &none &none
-                               &kp KP_DIVIDE &kp KP_N0                                                   &none    &none
-                                                       &none     &none                 &none    &none
-                                                       &none     &none                 &none    &none
-                                                       &none     &none                 &none    &none
+        &none  &none           &none         &none  &none  &none                 &none    &none    &none    &none     &none &none
+        &none  &kp KP_PLUS     &kp N1        &kp N2 &kp N3 &none                 &none    &kp CAPS &kp UP   &none     &none &none
+        &none  &kp KP_MINUS    &kp N4        &kp N5 &kp N6 &kp EQUAL             &none    &kp LEFT &kp DOWN &kp RIGHT &none &none
+        &none  &kp KP_MULTIPLY &kp N7        &kp N8 &kp N9 &none                 &none    &none    &none    &none     &none &none
+                               &kp KP_DIVIDE &kp N0                                                &none    &none
+                                             &none  &none                                 &none    &none
+                                             &none  &none                                 &none    &none
+                                             &none  &none                                 &none    &none
     >;
 };
 
@@ -94,14 +103,14 @@ symbol_layer {
 
 btfc_layer {
     bindings = <
-        &none &none        &none        &none        &none        &none            &none       &none  &none &none &none      &none
-        &none &bt BT_SEL 0 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none            &none       &reset &none &none &bt BT_CLR &none
-        &none &none        &none        &none        &none        &none            &none       &none  &none &none &none      &none
-        &none &none        &bt BT_CLR   &none        &none        &bootloader      &bootloader &none  &none &none &none      &none
-                           &none        &none                                                         &none &none
+        &none &none        &none        &none        &none        &none            &none       &none &none &none &none      &none
+        &none &bt BT_SEL 0 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none            &none       &none &none &none &bt BT_CLR &none
+        &none &none        &none        &none        &none        &none            &none       &none &none &none &none      &none
+        &none &none        &none        &none        &none        &bootloader      &bootloader &none &none &none &none      &none
+                           &none        &none                                                        &none &none
                                                      &none        &none            &none       &none
                                                      &none        &none            &none       &none
-                                                     &none        &none            &none       &none
+                                                     &reset       &none            &none       &reset
     >;
 };
     };
