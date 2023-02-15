@@ -109,9 +109,9 @@ btfc_layer {
         &none &none        &none        &none        &none        &none            &none       &none        &none        &none      &none &none
         &none &none        &none        &none        &none        &bootloader      &bootloader &none        &none        &none      &none &none
                            &none        &none                                                               &none        &none
-                                        &kp C_BRI_UP  &kp C_VOL_UP                             &kp C_VOL_UP &kp C_BRI_UP
-                                        &kp C_BRI_DN  &kp C_VOL_DN                             &kp C_VOL_DN &kp C_BRI_DN
-                                        &reset        &kp C_MUTE                               &kp C_MUTE   &reset
+                                        &kp C_BRI_UP  &none                                    &none        &kp C_BRI_UP
+                                        &kp C_BRI_DN  &kp C_VOL_UP                             &kp C_VOL_UP &kp C_BRI_DN
+                                        &reset        &kp C_VOL_DN                             &kp C_VOL_DN &reset
     >;
 };
     };
