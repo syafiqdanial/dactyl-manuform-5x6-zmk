@@ -15,7 +15,6 @@ behaviors {
                 = <&macro_tap &kp LPAR &kp RPAR>;
          };
          
-         
          squarebkt: square_brackets {
             label= "square_brackets";
             compatible = "zmk,behavior-macro";
@@ -23,7 +22,6 @@ behaviors {
             bindings
                 = <&macro_tap &kp LBKT &kp RBKT>;
          };
-         
          
          curlbkt: curl_brackets {
             label= "curl_brackets";
@@ -50,12 +48,7 @@ hm: homerow_mods {
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
-    
-#define DEFAULT 0
-#define LWR 1
-#define RSE 2
-#define ADJ 3
-
+};
     keymap {
         compatible = "zmk,keymap";
 
