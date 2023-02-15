@@ -70,9 +70,9 @@ default_layer {
         &none &hm LGUI A &hm LALT S &hm LCTRL D &kp F       &kp G          &kp H        &kp J         &hm RCTRL K &hm RALT L &hm RGUI SQT &none
         &none &kp Z      &kp X      &kp C       &kp V       &kp B          &kp N        &kp M         &kp COMMA   &kp DOT    &kp FSLH     &none
                          &none      &none                                                             &kp SEMI    &kp TILDE
-                                                &lt 1 SPACE &none          &none        &lt 1 BSPC
-                                                &lt 2 TAB   &lt 3 ESC      &lt 3 DEL    &lt 2 ENTER
-                                                &kp LPAR    &kp LSHFT      &kp RSHFT    &kp RPAR
+                                                &lt 1 SPACE &none          &none        &lt 1 RSHFT
+                                                &lt 2 TAB   &lt 3 ESC      &lt 3 DEL    &lt 2 BSPC
+                                                &kp LPAR    &kp LSHFT      &kp ENTER    &kp RPAR
     >;
 };
 
