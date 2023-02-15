@@ -3,6 +3,44 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
+behaviors {
+
+      macros {
+         roundbkt: round_brackets {
+            label= "round_brackets";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LPAR &kp RPAR>;
+         };
+         
+         
+         squarebkt: square_brackets {
+            label= "square_brackets";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LBKT &kp RBKT>;
+         };
+         
+         
+         curlbkt: curl_brackets {
+            label= "curl_brackets";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LBRC &kp RBRC>;
+         };
+        
+         apostrophe: apostrophe {
+            label= "apostrophe";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DQT &kp DQT>;
+         };
+      };
+      
 hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS";
