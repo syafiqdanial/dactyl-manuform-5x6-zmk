@@ -60,17 +60,17 @@ default_layer {
         &none &hm LGUI A &hm LALT S &hm LCTRL D &kp F       &kp G          &kp H      &kp J         &hm RCTRL K &hm RALT L &hm RGUI SQT &none
         &none &kp Z      &kp X      &kp C       &kp V       &kp B          &kp N      &kp M         &kp COMMA   &kp DOT    &kp FSLH     &none
                          &none      &none                                                           &kp SEMI    &kp ENTER
-                                                &lt 2 ESC   &none          &none      &kp BACKSPACE
-                                                &lt 1 SPACE &kp TAB        &kp DELETE &kp LSHFT
-                                                &kp LBKT    &kp RBKT       &lt 3 RGUI &none
+                                                &kp ESC     &none          &none      &kp BACKSPACE
+                                                &lt 1 SPACE &hm LSHFT TAB  &kp DELETE &kp RSHFT
+                                                &lt 2 LBKT  &lt 3 RBKT     &lt 3 RGUI &none
     >;
 };
 
 navnum_layer {
     bindings = <
         &none  &none           &none         &none     &none     &none                 &none    &none    &none    &none     &none &none
-        &none  &kp KP_PLUS     &kp KP_N1     &kp KP_N2 &kp KP_N3 &kp LBKT              &kp RBKT &kp CAPS &kp UP   &trans    &none &none
-        &none  &kp KP_MINUS    &kp KP_N4     &kp KP_N5 &kp KP_N6 &trans                &none    &kp LEFT &kp DOWN &kp RIGHT &none &none
+        &none  &kp KP_PLUS     &kp KP_N1     &kp KP_N2 &kp KP_N3 &kp LPAR              &kp RPAR &kp CAPS &kp UP   &trans    &none &none
+        &none  &kp KP_MINUS    &kp KP_N4     &kp KP_N5 &kp KP_N6 &kp EQUAL             &none    &kp LEFT &kp DOWN &kp RIGHT &none &none
         &none  &kp KP_MULTIPLY &kp KP_N7     &kp KP_N8 &kp KP_N9 &trans                &none    &none    &none    &none     &none &none
                                &kp KP_DIVIDE &kp KP_N0                                                   &none    &none
                                                        &none     &none                 &none    &none
