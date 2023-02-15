@@ -61,7 +61,7 @@ default_layer {
         &none &kp Z      &kp X      &kp C       &kp V       &kp B          &kp N      &kp M         &kp COMMA   &kp DOT    &kp FSLH     &none
                          &none      &none                                                           &kp SEMI    &kp ENTER
                                                 &lt 2 ESC   &none          &none      &kp BACKSPACE
-                                                &lt 1 SPACE &kp TAB        &kp LSHFT  &kp DELETE
+                                                &lt 1 SPACE &kp TAB        &kp DELETE &kp LSHFT
                                                 &kp LBKT    &kp RBKT       &lt 3 RGUI &none
     >;
 };
