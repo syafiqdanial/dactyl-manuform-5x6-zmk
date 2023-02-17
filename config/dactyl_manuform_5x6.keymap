@@ -68,11 +68,11 @@ default_layer {
         &none &none      &none      &none       &none       &none          &none        &none         &none       &none      &none        &none
         &none &kp Q      &kp W      &kp E       &kp R       &kp T          &kp Y        &kp U         &kp I       &kp O      &kp P        &none
         &none &hm LGUI A &hm LALT S &hm LCTRL D &kp F       &kp G          &kp H        &kp J         &hm RCTRL K &hm RALT L &hm RGUI SQT &none
-        &none &kp Z      &kp X      &kp C       &kp V       &kp B          &kp N        &kp M         &kp COMMA   &kp DOT    &kp FSLH     &none
+        &none &kp Z      &kp X      &kp C       &kp V       &kp B          &lt 2 N      &lt 1 M       &kp COMMA   &kp DOT    &kp FSLH     &none
                          &none      &none                                                             &kp SEMI    &none
                                                 &lt 2 TAB   &none          &none        &lt 1 DEL
-                                                &lt 1 SPACE &lt 3 ESC      &none        &hm RSHFT BSPC
-                                                &none       &kp LSHFT      &kp ENTER    &none
+                                                &lt 1 SPACE &hm LSHFT ESC  &kp ESC      &hm RSHFT BSPC
+                                                &mo 3       &kp ENTER      &kp ENTER    &mo 3
     >;
 };
 
