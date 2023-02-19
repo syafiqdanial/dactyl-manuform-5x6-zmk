@@ -69,7 +69,7 @@ default_layer {
         &none &kp Q      &kp W      &kp E       &kp R       &kp T          &kp Y        &kp U         &kp I       &kp O      &kp P        &none
         &none &hm LGUI A &hm LALT S &hm LCTRL D &kp F       &kp G          &kp H        &kp J         &hm RCTRL K &hm RALT L &hm RGUI SQT &none
         &none &kp Z      &kp X      &kp C       &kp V       &kp B          &lt 2 N      &lt 1 M       &kp COMMA   &kp DOT    &kp FSLH     &none
-                         &none      &none                                                             &kp SEMI    &kp BSLH
+                         &kp F2     &kp F4                                                            &kp SEMI    &kp BSLH
                                                 &lt 2 TAB   &none          &none        &lt 1 DEL
                                                 &lt 1 SPACE &hm LSHFT ESC  &kp ESC      &hm RSHFT BSPC
                                                 &mo 3       &kp ENTER      &kp ENTER    &mo 3
@@ -82,8 +82,8 @@ navnum_layer {
         &none  &kp KP_PLUS     &kp N1        &kp N2    &kp N3 &kp LPAR              &kp RPAR &kp CAPS  &kp UP   &none     &none &none
         &none  &kp KP_MINUS    &kp N4        &kp N5    &kp N6 &kp EQUAL             &none    &kp LEFT  &kp DOWN &kp RIGHT &none &none
         &none  &kp KP_MULTIPLY &kp N7        &kp N8    &kp N9 &none                 &none    &none     &none    &none     &none &none
-                               &kp KP_DIVIDE &kp N0                                                   &none    &none
-                                             &kp ENTER   &none                               &none     &kp ENTER
+                               &kp KP_DIVIDE &kp N0                                                    &none    &none
+                                             &kp ENTER &none                                 &none     &kp ENTER
                                              &kp BSPC  &none                                 &none     &kp BSPC
                                              &none     &none                                 &none     &none
     >;
