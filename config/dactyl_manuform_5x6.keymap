@@ -65,10 +65,10 @@ hm: homerow_mods {
 
 default_layer {
     bindings = <
-        &none &none      &none      &none       &none       &none          &none        &none         &none       &none      &none        &none
-        &none &kp Q      &kp W      &kp E       &kp R       &kp T          &kp Y        &kp U         &kp I       &kp O      &kp P        &none
-        &none &hm LGUI A &hm LALT S &hm LCTRL D &kp F       &kp G          &kp H        &kp J         &hm RCTRL K &hm RALT L &hm RGUI SQT &none
-        &none &kp Z      &kp X      &kp C       &kp V       &kp B          &lt 2 N      &lt 1 M       &kp COMMA   &kp DOT    &kp FSLH     &none
+        &none &none      &none      &none       &none       &none          &none        &none         &none       &none      &none         &none
+        &none &kp Q      &kp W      &kp E       &kp R       &kp T          &kp Y        &kp U         &kp I       &kp O      &kp P         &none
+        &none &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F &kp G          &kp H        &hm RSHFT J   &hm RCTRL K &hm RALT L &hm RGUI SQT  &none
+        &none &kp Z      &kp X      &kp C       &kp V       &kp B          &lt 2 N      &lt 1 M       &kp COMMA   &kp DOT    &hm BSLH FSLH &none
                          &kp F2     &kp F4                                                            &kp SEMI    &kp BSLH
                                                 &lt 2 TAB   &none          &none        &lt 1 DEL
                                                 &lt 1 SPACE &hm LSHFT ESC  &kp ESC      &hm RSHFT BSPC
@@ -78,14 +78,14 @@ default_layer {
 
 navnum_layer {
     bindings = <
-        &none  &none           &none         &none     &none  &none                 &none    &none     &none     &none     &none &none
-        &none  &kp KP_PLUS     &kp N1        &kp N2    &kp N3 &kp LPAR              &kp RPAR &kp CAPS  &kp UP    &none     &none &none
-        &none  &kp KP_MINUS    &kp N4        &kp N5    &kp N6 &kp EQUAL             &none    &kp LEFT  &kp DOWN  &kp RIGHT &none &none
-        &none  &kp KP_MULTIPLY &kp N7        &kp N8    &kp N9 &kp DOT               &none    &none     &none     &none     &none &none
-                               &kp KP_DIVIDE &kp N0                                                    &kp HOME  &kp END
-                                             &kp ENTER &none                                 &none     &kp ENTER
-                                             &kp BSPC  &none                                 &kp PG_UP &kp BSPC
-                                             &none     &none                                 &none     &kp PG_DN
+        &none  &none           &none         &none     &none  &none                 &none     &none     &none     &none     &none &none
+        &none  &kp KP_PLUS     &kp N1        &kp N2    &kp N3 &kp LPAR              &kp RPAR  &kp CAPS  &kp UP    &none     &none &none
+        &none  &kp KP_MINUS    &kp N4        &kp N5    &kp N6 &hm EQUAL N0          &none     &kp LEFT  &kp DOWN  &kp RIGHT &none &none
+        &none  &kp KP_MULTIPLY &kp N7        &kp N8    &kp N9 &kp DOT               &none     &none     &none     &none     &none &none
+                               &kp KP_DIVIDE &hm F2 F4                                                  &kp HOME  &kp END
+                                             &kp ENTER &none                                  &none     &kp ENTER
+                                             &kp BSPC  &none                                  &kp PG_UP &kp BSPC
+                                             &none     &none                                  &none     &kp PG_DN
     >;
 };
 
