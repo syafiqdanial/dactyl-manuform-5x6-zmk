@@ -54,6 +54,14 @@ behaviors {
             bindings
                 = <&macro_tap &kp LGUI &kp LCTRL &kp RIGHT>;
          };
+        
+         tasktab: tasktab {
+            label= "tasktab";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LGUI &kp TAB>;
+         };
       };
       
 hm: homerow_mods {
@@ -107,14 +115,14 @@ navnum_layer {
 
 symbol_layer {
     bindings = <
-        &none  &none     &none      &none         &none         &none                 &none  &none  &none     &none   &none   &none
-        &none  &roundbkt &squarebkt &curlbkt      &kp GRAVE     &kp TILDE             &trans &kp F1 &kp F2    &kp F3  &kp F4  &none
-        &none  &kp EXCL  &kp AT     &kp HASH      &kp DOLLAR    &kp PIPE              &trans &kp F5 &kp F6    &kp F7  &kp F8  &none
-        &none  &kp PRCNT &kp CARET  &kp AMPERSAND &kp BACKSLASH &kp UNDERSCORE        &trans &kp F9 &kp F10   &kp F11 &kp F12 &none
-                         &none      &none                                                           &winright &none
-                                                  &none         &none                 &none  &winleft
-                                                  &none         &none                 &none  &none
-                                                  &none         &none                 &none  &none
+        &none  &none     &none      &none         &none         &none                 &none    &none  &none     &none   &none   &none
+        &none  &roundbkt &squarebkt &curlbkt      &kp GRAVE     &kp TILDE             &trans   &kp F1 &kp F2    &kp F3  &kp F4  &none
+        &none  &kp EXCL  &kp AT     &kp HASH      &kp DOLLAR    &kp PIPE              &trans   &kp F5 &kp F6    &kp F7  &kp F8  &none
+        &none  &kp PRCNT &kp CARET  &kp AMPERSAND &kp BACKSLASH &kp UNDERSCORE        &trans   &kp F9 &kp F10   &kp F11 &kp F12 &none
+                         &none      &none                                                             &winright &none
+                                                  &none         &none                 &winleft &tasktab
+                                                  &none         &none                 &none    &none
+                                                  &none         &none                 &none    &none
     >;
 };
 
