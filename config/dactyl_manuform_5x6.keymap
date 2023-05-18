@@ -47,7 +47,7 @@ behaviors {
                 = <&macro_tap &kp LGUI &kp LCTRL &kp LEFT>;
          };
         
-         winleft: winright {
+         winright: winright {
             label= "winright";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
