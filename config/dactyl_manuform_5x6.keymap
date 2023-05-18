@@ -38,6 +38,22 @@ behaviors {
             bindings
                 = <&macro_tap &kp DQT &kp DQT>;
          };
+        
+         winleft: winleft {
+            label= "winleft";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LGUI &kp LCTRL &kp LEFT>;
+         };
+        
+         winleft: winright {
+            label= "winright";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LGUI &kp LCTRL &kp RIGHT>;
+         };
       };
       
 hm: homerow_mods {
@@ -80,7 +96,7 @@ navnum_layer {
     bindings = <
         &none  &none           &none         &none     &none  &none                 &none     &none     &none     &none     &none &none
         &none  &kp KP_PLUS     &kp N1        &kp N2    &kp N3 &kp LPAR              &kp RPAR  &kp CAPS  &kp UP    &none     &none &none
-        &none  &kp KP_MINUS    &kp N4        &kp N5    &kp N6 &hm EQUAL N0          &none     &kp LEFT  &kp DOWN  &kp RIGHT &none &none
+        &none  &kp KP_MINUS    &kp N4        &kp N5    &kp N6 &kp N0                &kp EQUAL &kp LEFT  &kp DOWN  &kp RIGHT &none &none
         &none  &kp KP_MULTIPLY &kp N7        &kp N8    &kp N9 &kp DOT               &none     &none     &none     &none     &none &none
                                &kp KP_DIVIDE &hm F2 F4                                                  &kp HOME  &kp END
                                              &kp ENTER &none                                  &none     &kp ENTER
@@ -91,12 +107,12 @@ navnum_layer {
 
 symbol_layer {
     bindings = <
-        &none  &none     &none      &none         &none         &none                 &none  &none  &none   &none   &none   &none
-        &none  &roundbkt &squarebkt &curlbkt      &kp GRAVE     &kp TILDE             &trans &kp F1 &kp F2  &kp F3  &kp F4  &none
-        &none  &kp EXCL  &kp AT     &kp HASH      &kp DOLLAR    &kp PIPE              &trans &kp F5 &kp F6  &kp F7  &kp F8  &none
-        &none  &kp PRCNT &kp CARET  &kp AMPERSAND &kp BACKSLASH &kp UNDERSCORE        &trans &kp F9 &kp F10 &kp F11 &kp F12 &none
-                         &none      &none                                                           &none   &none
-                                                  &none         &none                 &none  &none
+        &none  &none     &none      &none         &none         &none                 &none  &none  &none     &none   &none   &none
+        &none  &roundbkt &squarebkt &curlbkt      &kp GRAVE     &kp TILDE             &trans &kp F1 &kp F2    &kp F3  &kp F4  &none
+        &none  &kp EXCL  &kp AT     &kp HASH      &kp DOLLAR    &kp PIPE              &trans &kp F5 &kp F6    &kp F7  &kp F8  &none
+        &none  &kp PRCNT &kp CARET  &kp AMPERSAND &kp BACKSLASH &kp UNDERSCORE        &trans &kp F9 &kp F10   &kp F11 &kp F12 &none
+                         &none      &none                                                           &winright &none
+                                                  &none         &none                 &none  &winleft
                                                   &none         &none                 &none  &none
                                                   &none         &none                 &none  &none
     >;
