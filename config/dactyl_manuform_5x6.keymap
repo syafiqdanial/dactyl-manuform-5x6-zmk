@@ -44,7 +44,9 @@ behaviors {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LGUI &kp LCTRL &kp LEFT>;
+                = <&macro_press &kp LGUI &kp LCTRL>, 
+                <&macro_tap &kp LEFT>,
+                <&macro_release &kp LGUI &kp LCTRL>;
          };
         
          winright: winright {
@@ -52,15 +54,19 @@ behaviors {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LGUI &kp LCTRL &kp RIGHT>;
+                = <&macro_press &kp LGUI &kp LCTRL>, 
+                <&macro_tap &kp RIGHT>,
+                <&macro_release &kp LGUI &kp LCTRL>;
          };
         
-         tasktab: tasktab {
-            label= "tasktab";
+         taskview: taskview {
+            label= "taskview";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LGUI &kp TAB>;
+                = <&macro_press &kp LGUI>, 
+                <&macro_tap &kp TAB>,
+                <&macro_release &kp LGUI>;
          };
       };
       
